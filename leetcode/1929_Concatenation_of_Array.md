@@ -1,8 +1,8 @@
 
-# JavaScript Solution
+# JavaScript Solutions
 
-## Approach 1:
-```
+### Approach 1:
+```JS
 var getConcatenation = function(nums) {
     let arr = [];
     let len = nums.length;
@@ -15,8 +15,8 @@ var getConcatenation = function(nums) {
 };
 ```
 
-## Approach 2:
-```
+### Approach 2:
+```JS
 var getConcatenation = function(nums) {
     return [...nums, ...nums];
 };
@@ -25,7 +25,7 @@ var getConcatenation = function(nums) {
 
 # C++ Solution
 
-```
+```C++
 class Solution {
 public:
     vector<int> getConcatenation(vector<int>& nums) {

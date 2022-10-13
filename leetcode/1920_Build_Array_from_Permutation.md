@@ -1,7 +1,7 @@
 
 # JavaScript Solution
 
-```
+```JS
 var buildArray = function(nums) {
     let len = nums.length;
     let ans = [];
@@ -17,7 +17,7 @@ var buildArray = function(nums) {
 
 # C++ Solution
 
-```
+```C++
 class Solution {
 public:
     vector<int> buildArray(vector<int>& nums) {
