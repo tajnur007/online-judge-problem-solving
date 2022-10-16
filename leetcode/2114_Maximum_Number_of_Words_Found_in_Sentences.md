@@ -10,8 +10,7 @@ var mostWordsFound = function(sentences) {
     let ans = 0;
 
     sentences.forEach(sentence => {
-        const tempSentence = sentence.split(' ');
-        ans = Math.max(ans, tempSentence.length);
+        ans = Math.max(ans, sentence.split(' ').length);
     });
     
     return ans;
