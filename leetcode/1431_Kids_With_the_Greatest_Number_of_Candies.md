@@ -1,3 +1,22 @@
+
+# JavaScript Solution
+
+```JS
+/**
+ * @param {number[]} candies
+ * @param {number} extraCandies
+ * @return {boolean[]}
+ */
+var kidsWithCandies = function(candies, extraCandies) {
+    const maxNum = Math.max(...candies);
+    return candies.map(num => num + extraCandies < maxNum ? false : true);
+};
+```
+
+
+# C++ Solution
+
+```C++
 class Solution {
 public:
     vector<bool> kidsWithCandies(vector<int>& candies, int extraCandies) {
@@ -14,3 +33,7 @@ public:
         return ans;
     }
 };
+```
+
+
+
