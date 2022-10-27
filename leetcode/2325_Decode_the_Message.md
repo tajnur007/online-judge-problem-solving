@@ -8,8 +8,8 @@
  * @return {string}
  */
 var decodeMessage = function(key, message) {
-    let hash = {};
     let alphabets = 'abcdefghijklmnopqrstuvwxyz';
+    let hash = {};
     let i = 0;
 
     for(let ch of key) {
@@ -19,16 +19,14 @@ var decodeMessage = function(key, message) {
         }
     }
 
-    let finalString = '';
+    hash[' '] = ' ';
+    let decodedMessage = '';
+    
     for(let ch of message) {
-        if(ch === ' ') {
-            finalString += ' ';
-        } else {
-            finalString += hash[ch];
-        }
+        decodedMessage += hash[ch];
     }
 
-    return finalString;
+    return decodedMessage;
 };
 ```
 
